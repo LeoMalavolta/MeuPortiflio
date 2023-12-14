@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Leonardo Malavolta</title>
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body id="bodyPrincipal" class="modo-claro">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-5 fixed-top">
+            <div class="row d-flex justify-content-between w-100">
+                <div class="col-7 d-flex align-items-center">
+                    <!-- Adicionei align-items-center para centralizar verticalmente -->
+                    <a style="margin-left:250px; font-size: 30px" class="navbar-brand" href="#leonardo-malavolta">Leonardo Malavolta</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col-5 navbar-collapse collapse d-sm-inline-flex justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a id="sobreMimHeader" class="nav-link text-dark" href="#sobre-mim">Sobre Mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="tecnologiasHeader" class="nav-link text-dark" href="#tecnologias">Tecnologias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contatoHeader" class="nav-link text-dark" href="#contato">Contato</a>
+                        </li>
+                        <li style="margin-left:15px" class="nav-item">
+                            <img id="brazilLogo" style="display: none; height: 32px; margin-top: 4px; margin-left: 3px; cursor: pointer" src="~/img/brazil.png" alt="Brazil Flag" onclick="AlteraLinguagemIngles()">
+                            <img id="usaLogo" style="height: 35px; margin-top: 3px; cursor: pointer" src="~/img/usa.png" alt="USA Flag" onclick="AlteraLinguagemPortugues()">
+                        </li>
+                        <li style=" margin-left:12px; margin-right:250px" class="nav-item">
+                            <i id="modoClaro" style="margin-top: 8px; margin-left: 10px; font-size: 25px; cursor: pointer;" class="far fa-sun" onclick="AlteraModoClaro()"></i>
+                            <i id="modoEscuro" style="display: none; margin-top: 8px; margin-left: 10px; margin-right: 6px; font-size: 25px; cursor: pointer" class="far fa-moon" onclick="AlteraModoEscuro()"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
