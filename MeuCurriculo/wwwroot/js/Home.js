@@ -49,8 +49,8 @@ $('#bancoDeDados').mouseenter(function () {
 });
 
 function EnviarEmail() {
-    var name = document.getElementById('name').value;
-    var message = document.getElementById('message').value;
+    var name = document.getElementById('nomeEmailTitulo').value;
+    var message = document.getElementById('mensagemEmail').value;
 
     var subject = 'Assunto do E-mail';
 
