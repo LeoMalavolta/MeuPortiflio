@@ -12,15 +12,62 @@ function AlteraLinguagemPortugues() {
 
 function AlteraModoClaro() {
     $('#modoClaro').css('display', 'none');
-    $('#modoEscuro').css('display', ''); 
+    $('#modoEscuro').css('display', '');
+    $('#nomeHeader').addClass('text-dark');
+    $('#sobreMimHeader').addClass('text-dark');
+    $('#tecnologiasHeader').addClass('text-dark');
+    $('#contatoHeader').addClass('text-dark');
+    $('#nomeHeader').css('color', 'black');
+    $('#sobreMimHeader').css('color', 'black');
+    $('#tecnologiasHeader').css('color', 'black');
+    $('#contatoHeader').css('color', 'black');
+    $('#gitIcone').css('color', 'black');
+    $('#emailIcone').css('color', 'black');
+    $('#linkeIcone').css('color', 'black');
+    $('#instagramIcone').css('color', 'black');
+    $('#tecnologiaCsharpe').css('display', '');
+    $('#tecnologiaHtml').css('display', '');
+    $('#tecnologiaCss').css('display', '');
+    $('#tecnologiaCsharpeBranco').css('display', 'none');
+    $('#tecnologiaHtmlBranco').css('display', 'none');
+    $('#tecnologiaCssBranco').css('display', 'none');
+    $('#tecnologiaJavascript').css('color', '#1D5F57');
+    $('#bancoDeDados').css('color', '#1D5F57');
+    $('#bodyPrincipal').removeClass('modo-escuro');
+    $('#bodyPrincipal').addClass('modo-claro');
+    $('#header').removeClass('modo-escuro');
+    $('#header').addClass('modo-claro');
 }
 
 function AlteraModoEscuro() {
     $('#modoClaro').css('display', '');
     $('#modoEscuro').css('display', 'none');
-    $('#bodyPrincipal').removeClass('modo-claro'); // Remova outras classes se necessário
+    $('#nomeHeader').removeClass('text-dark');
+    $('#sobreMimHeader').removeClass('text-dark');
+    $('#tecnologiasHeader').removeClass('text-dark');
+    $('#contatoHeader').removeClass('text-dark');
+    $('#nomeHeader').css('color', 'white');
+    $('#sobreMimHeader').css('color', 'white');
+    $('#tecnologiasHeader').css('color', 'white');
+    $('#contatoHeader').css('color', 'white');
+    $('#gitIcone').css('color', 'white');
+    $('#emailIcone').css('color', 'white');
+    $('#linkeIcone').css('color', 'white');
+    $('#instagramIcone').css('color', 'white');
+    $('#tecnologiaJavascript').css('color', 'white');
+    $('#tecnologiaCsharpe').css('display', 'none');
+    $('#tecnologiaHtml').css('display', 'none');
+    $('#tecnologiaCss').css('display', 'none');
+    $('#tecnologiaCsharpeBranco').css('display', '');
+    $('#tecnologiaHtmlBranco').css('display', '');
+    $('#tecnologiaCssBranco').css('display', '');
+    $('#bancoDeDados').css('color', 'white');
+    $('#bodyPrincipal').removeClass('modo-claro'); 
     $('#bodyPrincipal').addClass('modo-escuro');
+    $('#header').removeClass('modo-claro');
+    $('#header').addClass('modo-escuro');
 }
+
 function AlterarSiteParaIngles() {
     $('#sobreMimHeader').text('About Me');
     $('#tecnologiasHeader').text('Technologies');
