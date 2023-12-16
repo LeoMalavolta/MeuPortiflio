@@ -11,6 +11,15 @@ $('#tecnologiaCsharpe').mouseenter(function () {
         $('#textoTecnologia').text("I use it for back-end programming, handling CRUD operations, business logic, etc...");
     }
 });
+$('#tecnologiaCsharpeBranco').mouseenter(function () {
+    if ($('#usaLogo').css('display') !== 'none') {
+        $('#tituloTecnologia').text("C#");
+        $('#textoTecnologia').text("Utilizo para programar back end, fazendo cruds, com a lógica de negócio e etc...");
+    } else {
+        $('#tituloTecnologia').text("C#");
+        $('#textoTecnologia').text("I use it for back-end programming, handling CRUD operations, business logic, etc...");
+    }
+});
 $('#tecnologiaJavascript').mouseenter(function () {
     if ($('#usaLogo').css('display') !== 'none') {
         $('#tituloTecnologia').text("JavaScript");
@@ -29,7 +38,25 @@ $('#tecnologiaHtml').mouseenter(function () {
         $('#textoTecnologia').text("I use it for front-end development");
     }
 });
+$('#tecnologiaHtmlBranco').mouseenter(function () {
+    if ($('#usaLogo').css('display') !== 'none') {
+        $('#tituloTecnologia').text("HTML");
+        $('#textoTecnologia').text("Utlizo para front end");
+    } else {
+        $('#tituloTecnologia').text("HTML");
+        $('#textoTecnologia').text("I use it for front-end development");
+    }
+});
 $('#tecnologiaCss').mouseenter(function () {
+    if ($('#usaLogo').css('display') !== 'none') {
+        $('#tituloTecnologia').text("CSS");
+        $('#textoTecnologia').text("Utilizo para arte");
+    } else {
+        $('#tituloTecnologia').text("CSS");
+        $('#textoTecnologia').text("I use it for styling");
+    }
+});
+$('#tecnologiaCssBranco').mouseenter(function () {
     if ($('#usaLogo').css('display') !== 'none') {
         $('#tituloTecnologia').text("CSS");
         $('#textoTecnologia').text("Utilizo para arte");
